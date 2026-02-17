@@ -1,4 +1,4 @@
-## 1.安装
+## 1. 安装
 
 **1.安装**
 
@@ -16,11 +16,11 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-## 2.使用
+## 2. 使用
 
-### 1.服务器配置
+### 2.1. 服务器配置
 
-#### 1.1.默认服务器
+#### 2.1.1. 默认服务器
 
 **1.将网页文件放到`/var/www/html`目录中**
 **2.配置`/etc/nginx/sites-available/default`文件**
@@ -119,7 +119,7 @@ server {
 #}
 ```
 
-#### 1.2 自定义服务器(myapp)
+#### 2.1.2. 2 自定义服务器(myapp)
 
 **1.创建`/etc/nginx/sites-available/myapp.conf`**
 
@@ -151,7 +151,7 @@ sudo ln -s "/etc/nginx/sites-available/myapp.conf" "/etc/nginx/sites-enabled"
 nginx -t
 ```
 
-### 2.启动
+### 2.2. 启动
 
 **1.重新加载配置文件**
 

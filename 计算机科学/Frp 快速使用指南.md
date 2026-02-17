@@ -1,11 +1,12 @@
-## 1.安装
+# Frp 快速使用指南
 
-下载适合系统的最新版压缩包后解压即可
-https://github.com/fatedier/frp/releases
+## 1. 安装
 
-## 2.使用
+下载适合系统的最新版压缩包后解压即可：<https://github.com/fatedier/frp/releases>
 
-### 2.1.服务器端
+## 2. 使用
+
+### 2.1. 服务器端
 
 1.在`frps.toml`中写入如下内容
 
@@ -39,7 +40,7 @@ maxDays = 7
 ./frps -c ./frps.toml
 ```
 
-### 2.2.客户端
+### 2.2. 客户端
 
 1.在`frpc.toml`中写入如下内容
 

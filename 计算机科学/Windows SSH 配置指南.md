@@ -1,4 +1,6 @@
-## 安装 OpenSSH
+# Windows SSH 配置指南
+
+## 1. 安装 OpenSSH
 
 三个方案任选一个
 
@@ -31,7 +33,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Server
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 ```
 
-## 编辑配置文件
+## 2. 编辑配置文件
 
 编辑 `C:\ProgramData\ssh\sshd_config`，调整配置，并将下述两行进行注释（否则会有权限问题）
 
@@ -40,7 +42,7 @@ Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
 #       AuthorizedKeysFile
 ```
 
-## 启动 sshd 服务
+## 3. 启动 sshd 服务
 
 ```powershell
 Start-Service sshd

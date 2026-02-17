@@ -1,4 +1,4 @@
-# CentOS 10 安装指南
+# Rocky Linux 10 安装指南
 
 [TOC]
 

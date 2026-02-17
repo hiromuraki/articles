@@ -1,4 +1,4 @@
-## 1.安装 mongodb
+## 1. 安装 mongodb
 
 ```bash
 mkdir -p "$HOME/local/mongodb"
@@ -6,7 +6,7 @@ tar xf $File -C "$HOME/local/mongodb"
 export PATH=$USER_LOCAL/mongodb/bin:$PATH
 ```
 
-## 2.安装 mongosh
+## 2. 安装 mongosh
 
 ```bash
 mkdir -p "$HOME/local/mongosh"
@@ -14,7 +14,7 @@ tar xf $File -C "$HOME/local/mongosh"
 export PATH=$USER_LOCAL/mongosh/bin:$PATH
 ```
 
-## 3.封装 Systemd
+## 3. 封装 Systemd
 
 **（1）创建 mongod 配置文件**
 
@@ -72,6 +72,6 @@ sudo systemctl status mongodb
 journalctl -u mongodb -f
 ```
 
-## R.相关链接
+## 4. R.相关链接
 
 https://www.mongodb.com/

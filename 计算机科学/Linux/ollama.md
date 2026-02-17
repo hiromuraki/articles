@@ -1,4 +1,4 @@
-## 1.下载与部署
+## 1. 下载与部署
 
 下载
 https://ollama.com/download/ollama-linux-amd64.tgz
@@ -7,7 +7,7 @@ https://ollama.com/download/ollama-linux-amd64.tgz
 sudo tar -C /usr -xzf ollama-linux-arm64.tgz
 ```
 
-## 2.配置 systemd 服务
+## 2. 配置 systemd 服务
 
 ```ini
 [Unit]
