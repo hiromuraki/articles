@@ -11,10 +11,14 @@
             "id": "a3242b05ecca403a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "应用部署指南/Forgejo 部署指南.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Forgejo 部署指南"
             }
           }
         ]
@@ -177,5 +181,9 @@
     }
   },
   "active": "a3242b05ecca403a",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "应用部署指南/Docker 安装指南.md",
+    "应用部署指南/CA 证书管理.md",
+    "应用部署指南/Blessing Skin 搭建指南.md"
+  ]
 }
