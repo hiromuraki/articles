@@ -1,36 +1,37 @@
-## 1.目标环境
+# 使用 WireGuard 建立虚拟局域网
 
-### 1.1.终端
+## 1. 目标环境
+
+### 1.1. 终端
 
 | 终端     | 操作系统     | 公网 ip |
 | -------- | ------------ | ------- |
-| 云服务器 | Ubuntu 24.04 | 1.2.3.4 |
+| 云服务器 | Ubuntu 26.04 | 1.2.3.4 |
 | 客户端   | Windows 10   | /       |
 | 客户端   | Windows 10   | /       |
 
-### 1.2.软件
+### 1.2. 软件
 
-| 名称      | 相关链接                  |
-| --------- | ------------------------- |
+| 名称      | 相关链接                    |
+| --------- | --------------------------- |
 | WireGuard | <https://www.wireguard.com> |
 
-## 2.配置过程
+## 2. 配置过程
 
-### 2.1.服务器端
+### 2.1. 服务器端
 
-**（1）安装并配置 WireGuard**
+**（1）安装并配置 WireGuard:**
 
 使用如下命令在 Ubuntu 中安装 WireGuard
 
 ```bash
-sudo apt update && sudo apt install wireguard-tools
+sudo apt update && sudo apt install -y wireguard-tools
 ```
 
-为了方便管理，我们在用户目录下创建一个 wireguard 文件夹，并切换到该文件夹，将其作为工作文件夹（如无特殊说明，之后的操作均在此目录中进行）
+为了方便管理，我们在用户目录下创建一个 wireguard 目录。此后如无特殊说明，建议都在此目录下进行操作
 
 ```bash
-mkdir -p ~/wireguard
-cd ~/wireguard
+mkdir ~/wireguard && cd ~/wireguard
 ```
 
 使用如下命令生成服务器端的公钥与私钥
@@ -68,7 +69,13 @@ PostDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 > ip route show default | awk '{print $5}'
 > ```
 
-**（2）打开 IP 转发**
+创建完成后，将 `wg0.conf` 文件移动到 `/etc/wireguard/wg0.conf`:
+
+```bash
+sudo mv ~/wireguard/wg0.conf /etc/wireguard/wg0.conf
+```
+
+**（2）打开 IP 转发:**
 
 使用如下命令打开 IP 转发（临时）
 
@@ -76,14 +83,14 @@ PostDown = iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
 
-若你要永久启用 IP 转发，使用如下命令
+若要永久启用 IP 转，使用如下命令
 
 ```bash
 echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 ```
 
-**（3）防火墙放行（UDP）**
+**（3）防火墙放行（UDP）:**
 
 取决于你的 ListenPort，这里用的是 51820，则需要在服务器放行端口 51820/udp
 
@@ -92,11 +99,11 @@ sudo sysctl -p
 sudo ufw allow 51820/udp
 ```
 
-> 注：云服务器的防火墙通常需要通过供应商提供的控制面板调整
+> 注：云服务器的防火墙通常需要通过供应商提供的控制面板调整，仅打开系统的防火墙通常无意义。
 
-### 2.2.客户端
+### 2.2. 客户端
 
-#### 2.2.1.第一个客户端
+#### 2.2.1. 第一个客户端
 
 **（1）安装并配置 WireGuard**
 下载并安装 WireGuard Windows 版（https://www.wireguard.com/install）
@@ -134,10 +141,8 @@ PersistentKeepalive = 25
 
 ```powershell
 New-NetFirewallRule `
-    -DisplayName "允许 WireGuard 子网 ICMP (10.8.0.0/24)" `
+    -DisplayName "_允许 WireGuard 子网流量 (10.8.0.0/24)" `
     -Direction Inbound `
-    -Protocol ICMPv4 `
-    -IcmpType 8 `
     -RemoteAddress 10.8.0.0/24 `
     -Action Allow `
     -Enabled True
@@ -146,8 +151,8 @@ New-NetFirewallRule `
 成功后输出如下
 
 ```powershell
-Name                          : {0ae8e092-9c84-4645-ae12-b70a4985c7c9}
-DisplayName                   : 允许 WireGuard 子网 ICMP (10.8.0.0/24)
+Name                          : {d131b927-c62b-443c-8580-e88e3f821d17}
+DisplayName                   : _允许 WireGuard 子网流量 (10.8.0.0/24)
 Description                   :
 DisplayGroup                  :
 Group                         :
@@ -170,7 +175,7 @@ PolicyAppId                   :
 PackageFamilyName             :
 ```
 
-#### 2.2.2.第二个客户端
+#### 2.2.2. 第二个客户端
 
 操作基本同第一个客户端，只是需要修改一下 Address 的值（通常采用主机号递增即可），修改后的配置文件如下
 
@@ -188,14 +193,14 @@ PersistentKeepalive = 25
 
 同理，如果有第三、第四等更多客户端，在这一配置的基础上修改 Address 的值即可
 
-### 3.连接
+### 2.3. 连接
 
-#### 3.1.服务器端（Ubuntu）
+#### 2.3.1. 服务器端（Ubuntu）
 
 运行如下命令以链接
 
 ```bash
-sudo wg-quick up ~/wireguard/wg0.conf
+sudo wg-quick up wg0
 ```
 
 输入以下命令以允许客户端联机
@@ -242,12 +247,12 @@ peer: [CLIENT/public.key]
   allowed ips: 10.8.0.3/32
 ```
 
-#### 3.2.客户端（Windows）
+#### 2.3.2. 客户端（Windows）
 
 打开 WireGuard 主界面，点击“连接”即可
 ![](./asserts/指示图-启动连接.png)
 
-#### 3.3.连通测试
+#### 2.3.3. 连通测试
 
 使用客户端（如 10.8.0.2） ping 服务器的虚拟局域网 ip（如 10.8.0.1）
 
@@ -270,9 +275,9 @@ ping 10.8.0.3
 
 若客户端与服务器之前，客户端之间都能 ping 通则表示连通成功，否则请对照先前步骤，检查是哪一步出现了问题（通常是防火墙配置问题，可考虑从暂时关闭防火墙开始进行排查）
 
-## 4.备注
+## 3. 备注
 
-### 4.1.在服务器端添加 Peer
+### 3.1. 在服务器端添加 Peer
 
 为了避免每次启动 WireGuard 都需要运行`sudo wg set wg0 peer [CLIENT/public.key] allowed-ips [CLIENT/lan.ip/32]`，可以按如下修改服务器端的 WireGuard 配置文件
 
@@ -302,7 +307,7 @@ AllowedIPs = [CLIENT2/lan.ip]/32
 | [CLIENT/public.key] | 客户端的公钥          |
 | [CLIENT/lan.ip]     | 客户端的虚拟局域网 ip |
 
-### 4.2.开启/关闭连接
+### 3.2. 开启/关闭连接
 
 服务器端（Ubuntu）使用如下命令开启/关闭连接
 
@@ -313,7 +318,15 @@ sudo wg-quick down ~/wireguard/wg0.conf # 关闭
 
 客户端（Windows）直接在 WireGuard 界面中点击“连接/断开”即可
 
-### 4.3.拓扑图
+### 3.3. systemctl 托管
+
+可以使用以下命令让 `systemctl` 托管 WireGuard 启动:
+
+```bash
+sudo systemctl enable --now wg-quick@wg0
+```
+
+### 3.4. 拓扑图
 
 ```mermaid
 graph LR

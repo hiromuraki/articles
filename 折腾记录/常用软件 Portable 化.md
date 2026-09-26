@@ -11,4 +11,9 @@
 - 下载：<https://code.visualstudio.com/Download>，选择 zip 包
 - 解包，在 `code.exe` 同级目录下创建名为 `data` 的目录
 
-## 
+## OBS Studio
+
+- 下载：<https://github.com/obsproject/obs-studio/releases>，选择 zip 包
+- 解包，在 `bin`/`data`/`obs-plugins` 所在的目录下创建名为 `portable_mode` 的文件
+- 启动后，将会在 `portable_mode` 同目录下生成 `config` 目录以保存 OBS 配置文件
+
