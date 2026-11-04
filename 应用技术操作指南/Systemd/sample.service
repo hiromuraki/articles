@@ -1,0 +1,39 @@
+# /etc/systemd/system/pwsh.service
+[Unit]
+Description=PowerShell 7 Daemon
+Documentation=https://github.com/PowerShell/PowerShell
+After=network.target
+
+[Service]
+# 服务配置核心参数
+Type=exec
+ExecStart=/opt/microsoft/powershell/7/pwsh -NoLogo -NoProfile -Command "while($true) { Write-Output 'Service running'; Start-Sleep -Seconds 30 }"
+WorkingDirectory=/var/lib/pwsh/
+User=pwshuser
+Group=pwshgroup
+
+# 资源管理
+MemoryLimit=512M
+CPUQuota=80%
+
+# 安全加固
+NoNewPrivileges=true
+ProtectSystem=strict
+PrivateTmp=true
+PrivateDevices=true
+ProtectHome=true
+RestrictSUIDSGID=true
+
+# 自动重启策略
+Restart=on-failure
+RestartSec=30s
+StartLimitInterval=5min
+StartLimitBurst=3
+
+# 日志配置
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pwsh-service
+
+[Install]
+WantedBy=multi-user.target

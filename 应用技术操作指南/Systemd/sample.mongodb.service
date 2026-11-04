@@ -1,0 +1,22 @@
+[Unit]
+Description=MongoDb Databse Server
+After=network.target
+
+[Service]
+User=user
+Group=user
+
+Environment=USER_LOCAL_BIN=/home/user/local/bin
+Environment=USER_LOCAL_CONFIG=/home/user/local/config
+Environment=USER_LOCAL_LOG=/home/user/local/log
+
+ExecStart=${USER_LOCAL_BIN}/mongod --config ${USER_LOCAL_CONFIG}/mongodb/mongod.conf
+ExecStop=${USER_LOCAL_BIN}/mongod --shutdown
+Restart=always
+RestartSec=10
+StandardOutput=file:${USER_LOCAL_LOG}/mongodb/mongod.stdout.log
+StandardError=file:${USER_LOCAL_LOG}/mongodb/mongod.stderr.log
+SyslogIdentifier=mongodb
+
+[Install]
+WantedBy=multi-user.target

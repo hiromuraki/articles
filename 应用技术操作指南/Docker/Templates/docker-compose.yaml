@@ -1,0 +1,46 @@
+services:
+    web:
+        build:
+            context: . # 构建上下文（当前目录）
+            dockerfile: ./path/to/Dockerfile # 相对于 context 的 Dockerfile 路径
+        container_name: flask-api # 自定义容器名（可选）
+        ports:
+            - "8000:8000" # 宿主机端口:容器端口
+        environment:
+            - FLASK_ENV=production
+            - DATABASE_URL=postgresql://user:pass@db:5432/mydb # 示例数据库配置
+        volumes:
+            - ./app:/app # 开发时挂载代码目录（热重载）
+            # - static_data:/app/static  # 生产时建议用命名卷持久化静态文件
+        depends_on:
+            - db # 依赖其他服务（如数据库）
+        restart: unless-stopped # 自动重启（类似 systemctl 的 Restart=always）
+        logging:
+            driver: json-file # 日志驱动
+            options:
+                max-size: "10m" # 单个日志文件最大 10MB
+                max-file: "3" # 保留 3 个历史日志文件
+        # 资源限制（生产环境建议设置）
+        deploy:
+            resources:
+                limits:
+                    cpus: "1.0"
+                    memory: 512M
+
+    # 示例数据库服务（PostgreSQL）
+    db:
+        image: postgres:13
+        container_name: flask-db
+        environment:
+            - POSTGRES_USER=user
+            - POSTGRES_PASSWORD=pass
+            - POSTGRES_DB=mydb
+        volumes:
+            - postgres_data:/var/lib/postgresql/data # 持久化数据库数据
+        ports:
+            - "5432:5432" # 仅开发时暴露，生产环境可移除
+
+# 定义命名卷（数据持久化）
+volumes:
+    postgres_data:
+    # static_data:
