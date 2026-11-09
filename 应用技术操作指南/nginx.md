@@ -1,3 +1,12 @@
+---
+id: "747e2d9c-1ce0-49c0-bc5b-2e7ce5d0e975"
+title: "nginx"
+category: "应用技术操作指南"
+date: "2025-07-20"
+tags: []
+access: private
+---
+
 ## 1.安装
 
 **1.安装**

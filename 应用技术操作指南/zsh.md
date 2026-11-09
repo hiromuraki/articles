@@ -1,3 +1,12 @@
+---
+id: "7d9e4dcf-b16f-44cf-bfac-229e13ad265b"
+title: "zsh"
+category: "应用技术操作指南"
+date: "2025-09-10"
+tags: []
+access: private
+---
+
 ## 1.安装 Zsh
 
 **(1) 安装 zsh**

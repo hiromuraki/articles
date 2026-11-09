@@ -1,3 +1,12 @@
+---
+id: "e02e62db-373d-4ae5-93b0-2d17ebdce5ec"
+title: "Frp 快速使用指南"
+category: "应用部署指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # Frp 快速使用指南
 
 ## 1. 安装

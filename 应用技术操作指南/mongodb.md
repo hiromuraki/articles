@@ -1,3 +1,12 @@
+---
+id: "a9908bd5-6f3a-4850-8013-9e00a1a7b8a5"
+title: "mongodb"
+category: "应用技术操作指南"
+date: "2025-05-29"
+tags: []
+access: private
+---
+
 ## 1.安装 mongodb
 
 ```bash

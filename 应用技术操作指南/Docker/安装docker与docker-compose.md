@@ -1,3 +1,12 @@
+---
+id: "160015f5-5919-49f3-83d5-0540e4ccc740"
+title: "安装docker与docker-compose"
+category: "应用技术操作指南->Docker"
+date: "2025-05-08"
+tags: []
+access: private
+---
+
 ```bash
 # 创建 /etc/apt/keyrings 目录（用于存储APT源的GPG密钥）
 # -p 参数：自动创建父目录（如果不存在）

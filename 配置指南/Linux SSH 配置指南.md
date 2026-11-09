@@ -1,3 +1,12 @@
+---
+id: "f6d5c763-d938-4c25-90ad-b97f3624bdfd"
+title: "Linux SSH 配置指南"
+category: "配置指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # Linux SSH 配置指南
 
 ## 1. 客户端

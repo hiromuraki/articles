@@ -1,3 +1,12 @@
+---
+id: "5d3d0fb2-3dd4-4dc4-b638-1fd71b3381d8"
+title: "Systemctl"
+category: "应用技术操作指南->Systemd"
+date: "2025-05-08"
+tags: []
+access: private
+---
+
 ```bash
 # 立即启动一个服务
 sudo systemctl start apache.service

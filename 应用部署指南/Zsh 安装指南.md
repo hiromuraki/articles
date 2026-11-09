@@ -1,3 +1,12 @@
+---
+id: "b68ae39c-0726-4810-9a08-560bc0780ed8"
+title: "Zsh 安装指南"
+category: "应用部署指南"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # Zsh 安装指南
 
 ## 1. 安装 Zsh

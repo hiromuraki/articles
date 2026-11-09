@@ -1,3 +1,12 @@
+---
+id: "ce5547fc-d867-4050-828b-ddfc7185e0ce"
+title: "ollama"
+category: "应用技术操作指南"
+date: "2025-06-13"
+tags: []
+access: private
+---
+
 ## 1.下载与部署
 
 下载

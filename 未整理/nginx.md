@@ -1,3 +1,12 @@
+---
+id: "1c569639-c017-4187-9d59-163a716b78e2"
+title: "nginx"
+category: "未整理"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 ## 1. 安装
 
 **1.安装**

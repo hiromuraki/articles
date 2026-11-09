@@ -1,3 +1,12 @@
+---
+id: "751eca02-f59c-4ddc-91ea-f0708903651e"
+title: "Podman 桥接网络的 hairpin NAT 问题"
+category: "折腾记录"
+date: "2026-06-15"
+tags: []
+access: private
+---
+
 # Podman 桥接网络的 hairpin NAT 问题
 
 ## 1. 场景

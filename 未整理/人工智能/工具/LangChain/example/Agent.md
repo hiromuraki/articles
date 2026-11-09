@@ -1,3 +1,12 @@
+---
+id: "3d2393d4-cf8b-436f-9b3b-e3c20fe77c7a"
+title: "Agent"
+category: "LangChain->example"
+date: "2026-01-02"
+tags: []
+access: private
+---
+
 ## 创建基础智能体
 
 ```python

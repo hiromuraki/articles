@@ -1,3 +1,12 @@
+---
+id: "3e61a5f4-a4ef-4a45-ad90-dfc36b42a63e"
+title: "MongoDb"
+category: "未整理"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 ## 1. 安装 mongodb
 
 ```bash

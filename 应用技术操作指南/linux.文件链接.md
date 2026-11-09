@@ -1,3 +1,12 @@
+---
+id: "2708efc5-ef08-4a23-ad76-5a01329c81ff"
+title: "linux.文件链接"
+category: "应用技术操作指南"
+date: "2025-08-17"
+tags: []
+access: private
+---
+
 ## 创建链接
 
 **软连接**

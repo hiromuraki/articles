@@ -1,3 +1,12 @@
+---
+id: "4df3e5b4-8887-4df1-8bfb-c894cc5e637d"
+title: "Gitea 部署指南（Docker）"
+category: "应用部署指南"
+date: "2026-02-16"
+tags: []
+access: private
+---
+
 # Gitea 部署指南（Docker）
 
 ## 1. 环境

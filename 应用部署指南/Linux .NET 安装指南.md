@@ -1,3 +1,12 @@
+---
+id: "8852f236-aa47-4a6a-9585-f91c81c443df"
+title: "Linux .NET 安装指南"
+category: "应用部署指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # Linux .NET 安装指南
 
 ## 1. 安装依赖库

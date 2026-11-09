@@ -1,3 +1,12 @@
+---
+id: "1fdfaa21-0120-4d03-b124-583f3630b790"
+title: "dotnet"
+category: "应用技术操作指南"
+date: "2025-08-17"
+tags: []
+access: private
+---
+
 ## 1.安装
 
 ### 依赖

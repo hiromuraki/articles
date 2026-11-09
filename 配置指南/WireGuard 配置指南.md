@@ -1,3 +1,12 @@
+---
+id: "91daf0c6-e054-4abe-a50e-388f5f03fcf4"
+title: "WireGuard 配置指南"
+category: "配置指南"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # WireGuard 配置指南
 
 ## 1. 服务器端配置

@@ -1,3 +1,12 @@
+---
+id: "6860c1ab-c070-4a09-931b-bf3a3f990ec4"
+title: "Forgejo 部署指南（Docker）"
+category: "应用部署指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # Forgejo 部署指南（Docker）
 
 ## 1. 环境

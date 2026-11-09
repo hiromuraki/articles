@@ -1,3 +1,12 @@
+---
+id: "36e3eaa1-adab-4ea2-9f50-6e4c8fbb6ebd"
+title: "记一次 Gitea + WireGuard 访问“假死”问题的排查：从 MSS Clamping 到 MTU 1500"
+category: "折腾记录"
+date: "2026-02-16"
+tags: []
+access: private
+---
+
 # 记一次 Gitea + WireGuard 访问“假死”问题的排查：从 MSS Clamping 到 MTU 1500
 
 ## 1. 背景与环境

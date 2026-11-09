@@ -1,3 +1,12 @@
+---
+id: "02611f89-4b23-468d-a791-9cfc09f6948b"
+title: "Rocky Linux 10 安装指南"
+category: "应用部署指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # Rocky Linux 10 安装指南
 
 [TOC]

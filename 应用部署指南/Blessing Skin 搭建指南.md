@@ -1,3 +1,12 @@
+---
+id: "546fbf50-1eaf-48b4-a44f-5329642afab3"
+title: "使用 Docker 搭建 Blessing Skin 皮肤站（使用 Sqlite 数据库）并启用 Yggdrasil API"
+category: "应用部署指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # 使用 Docker 搭建 Blessing Skin 皮肤站（使用 Sqlite 数据库）并启用 Yggdrasil API
 
 ## 1. 准备所需文件

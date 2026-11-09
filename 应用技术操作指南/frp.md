@@ -1,3 +1,12 @@
+---
+id: "e8ea7ecd-f8b7-47f1-9588-fb9d049a7f15"
+title: "frp"
+category: "应用技术操作指南"
+date: "2025-08-04"
+tags: []
+access: private
+---
+
 ## 1.安装
 
 下载适合系统的最新版压缩包后解压即可

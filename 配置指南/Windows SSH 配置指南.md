@@ -1,3 +1,12 @@
+---
+id: "66a0c4df-bbe6-468d-96dc-1c9c4587baee"
+title: "Windows SSH 配置指南"
+category: "配置指南"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 # Windows SSH 配置指南
 
 ## 1. 安装 OpenSSH

@@ -1,3 +1,12 @@
+---
+id: "a597f759-b036-415c-8fc4-6af6814989ca"
+title: "Hadoop 部署指南"
+category: "未整理->Hadoop"
+date: "2025-12-28"
+tags: []
+access: private
+---
+
 # Hadoop 部署指南
 
 ## 1.前言

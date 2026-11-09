@@ -1,3 +1,12 @@
+---
+id: "b542c33f-2df4-4b52-9110-0412fc73855b"
+title: "nodejs"
+category: "应用技术操作指南"
+date: "2025-05-08"
+tags: []
+access: private
+---
+
 ```bash
 # https://nodejs.org/zh-cn/download
 

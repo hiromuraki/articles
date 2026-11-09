@@ -1,3 +1,12 @@
+---
+id: "c185aa75-094f-4a55-97fb-66410ddeac13"
+title: "FLUX 本地部署指南"
+category: "应用技术操作指南->FLUX本地部署指南"
+date: "2025-11-06"
+tags: []
+access: private
+---
+
 # FLUX 本地部署指南
 
 [TOC]

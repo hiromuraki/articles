@@ -1,3 +1,12 @@
+---
+id: "c74ffbea-ba56-4449-abb5-15a1a5ea6486"
+title: "ollama"
+category: "未整理"
+date: "2026-02-17"
+tags: []
+access: private
+---
+
 ## 1. 下载与部署
 
 下载

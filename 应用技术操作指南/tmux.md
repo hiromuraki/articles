@@ -1,3 +1,12 @@
+---
+id: "4e5f6be8-c0e5-40f9-a946-2ac02ec38f10"
+title: "tmux"
+category: "应用技术操作指南"
+date: "2025-07-29"
+tags: []
+access: private
+---
+
 ## 安装
 
 ```bash

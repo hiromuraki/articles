@@ -1,3 +1,12 @@
+---
+id: "482a795b-2a4c-4e28-b0d8-a7fc235f7a7d"
+title: "FLUX.1-Dev 部署指南（Diffusers）"
+category: "扩散模型->FLUX.1"
+date: "2026-01-15"
+tags: []
+access: private
+---
+
 # FLUX.1-Dev 部署指南（Diffusers）
 
 [TOC]

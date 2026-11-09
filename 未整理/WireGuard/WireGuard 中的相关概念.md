@@ -1,3 +1,12 @@
+---
+id: "9b9bb072-eb75-4262-a369-5a0046432043"
+title: "WireGuard 中的相关概念"
+category: "未整理->WireGuard"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # WireGuard 中的相关概念
 
 ## 1. 网络拓扑

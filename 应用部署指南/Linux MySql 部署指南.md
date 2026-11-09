@@ -1,3 +1,12 @@
+---
+id: "9a99ace8-c3ca-4855-8bed-58a058662a41"
+title: "Linux MySql 部署指南"
+category: "应用部署指南"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # Linux MySql 部署指南
 
 ## 1. 安装 MySql

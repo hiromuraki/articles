@@ -1,3 +1,12 @@
+---
+id: "42807209-3955-4bd4-bf89-8c253b891646"
+title: "git"
+category: "应用技术操作指南"
+date: "2025-06-10"
+tags: []
+access: private
+---
+
 初始化
 
 ```bash

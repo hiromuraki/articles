@@ -1,3 +1,12 @@
+---
+id: "211ef869-0eb6-47ec-bf1f-8df0216ca322"
+title: "常用软件 Portable 化"
+category: "折腾记录"
+date: "2026-09-04"
+tags: []
+access: private
+---
+
 # 常用软件 Portable 化
 
 ## Windows Terminal

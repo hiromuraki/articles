@@ -1,3 +1,12 @@
+---
+id: "59bf877b-1a9a-4e4d-aa1e-227f51a94460"
+title: "解决开启代理后 WireGuard 内网域名不可访问"
+category: "折腾记录"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # 解决开启代理后 WireGuard 内网域名不可访问
 
 **现象：**

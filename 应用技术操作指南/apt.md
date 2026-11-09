@@ -1,3 +1,12 @@
+---
+id: "435f7d03-f80d-49f5-878b-7d1f2783e1df"
+title: "apt"
+category: "应用技术操作指南"
+date: "2025-06-11"
+tags: []
+access: private
+---
+
 ## 配置 apt 源
 
 ```bash

@@ -1,3 +1,12 @@
+---
+id: "b0287d06-f541-4de0-98d5-228f6028eadd"
+title: "FLUX 本地部署指南"
+category: "扩散模型->FLUX.1"
+date: "2026-01-15"
+tags: []
+access: private
+---
+
 # FLUX 本地部署指南
 
 [TOC]

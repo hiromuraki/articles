@@ -1,3 +1,12 @@
+---
+id: "b22c53eb-2bc2-4535-82f6-0492c189cc8e"
+title: "Docker 基本概念"
+category: "知识整合"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # Docker 基本概念
 
 ## 1. 镜像（Image）

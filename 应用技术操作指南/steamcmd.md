@@ -1,3 +1,12 @@
+---
+id: "420dfd50-05b8-47e0-9d50-c602365e49b8"
+title: "steamcmd"
+category: "应用技术操作指南"
+date: "2025-09-06"
+tags: []
+access: private
+---
+
 ## 1.安装
 
 ```bash

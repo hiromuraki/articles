@@ -1,3 +1,12 @@
+---
+id: "c968dbb2-fe46-4da2-8590-fc7f409d9010"
+title: "通过 DepotDownloader 下载旧版 CSGO 客户端与服务端"
+category: "游戏客户端"
+date: "2026-11-05"
+tags: []
+access: private
+---
+
 # 通过 DepotDownloader 下载旧版 CSGO 客户端与服务端
 
 以 2017 年 2 月 17 的 CSGO 作为示例。

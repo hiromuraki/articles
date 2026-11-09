@@ -1,3 +1,12 @@
+---
+id: "db8b7ddd-e7d7-4a88-a85e-dbfcb8d048cc"
+title: "使用WireGuard建立虚拟局域网"
+category: "应用技术操作指南->WireGuard"
+date: "2025-05-11"
+tags: []
+access: private
+---
+
 ## 1.目标环境
 
 ### 1.1.终端

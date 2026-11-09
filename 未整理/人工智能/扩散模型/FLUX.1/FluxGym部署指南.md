@@ -1,3 +1,12 @@
+---
+id: "2e7f400c-d1c8-44c2-908c-b096e4d48200"
+title: "FluxGym部署指南"
+category: "扩散模型->FLUX.1"
+date: "2026-01-24"
+tags: []
+access: private
+---
+
 [TOC]
 
 ## 1 环境准备

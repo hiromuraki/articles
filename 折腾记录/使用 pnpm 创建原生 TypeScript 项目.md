@@ -1,3 +1,12 @@
+---
+id: "0887babc-29fe-49bd-9ae4-9fab5347433b"
+title: "使用 pnpm 创建原生 TypeScript 项目"
+category: "折腾记录"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # 使用 pnpm 创建原生 TypeScript 项目
 
 ## 1. 安装 pnpm

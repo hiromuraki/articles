@@ -1,3 +1,12 @@
+---
+id: "ec77a319-03cc-4d41-8f12-bf4370c84bef"
+title: "使用 WireGuard 建立虚拟局域网"
+category: "未整理->WireGuard"
+date: "2026-09-27"
+tags: []
+access: private
+---
+
 # 使用 WireGuard 建立虚拟局域网
 
 ## 1. 目标环境

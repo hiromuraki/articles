@@ -1,3 +1,12 @@
+---
+id: "ed258367-620f-4c8a-b743-01ec37d3025a"
+title: "Hadoop 部署指南"
+category: "应用技术操作指南->Hadoop部署指南（Linux）"
+date: "2025-09-29"
+tags: []
+access: private
+---
+
 # Hadoop 部署指南
 
 ## 1.前言

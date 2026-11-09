@@ -1,3 +1,12 @@
+---
+id: "4920927c-ea81-46e4-a43f-694affcf038d"
+title: "ssh"
+category: "应用技术操作指南"
+date: "2025-09-29"
+tags: []
+access: private
+---
+
 ## SSH 配置
 
 ### 1.客户端

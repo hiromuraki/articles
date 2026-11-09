@@ -1,3 +1,12 @@
+---
+id: "de46dff0-5c41-4d11-9d47-a42381da3154"
+title: "Steamcmd 安装指南"
+category: "应用部署指南"
+date: "2026-02-18"
+tags: []
+access: private
+---
+
 # Steamcmd 安装指南
 
 ## 1. Linux

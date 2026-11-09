@@ -1,3 +1,12 @@
+---
+id: "9f2d7a89-d1c5-4123-801a-a405e5376d79"
+title: "powershell"
+category: "应用技术操作指南"
+date: "2025-05-08"
+tags: []
+access: private
+---
+
 ```bash
 # https://github.com/PowerShell/PowerShell/releases
 

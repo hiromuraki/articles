@@ -1,3 +1,12 @@
+---
+id: "f4c752a8-d0d3-4274-b3f9-b3c25ef530de"
+title: "基本LLM"
+category: "LangChain->example"
+date: "2026-01-01"
+tags: []
+access: private
+---
+
 ## 通用部分
 
 ```python
