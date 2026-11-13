@@ -4,7 +4,7 @@ title: "RAG"
 category: "LangChain->example"
 date: "2026-01-04"
 tags: []
-access: private
+access: public
 ---
 
 [TOC]

@@ -4,7 +4,7 @@ title: "Steamcmd 安装指南"
 category: "应用部署指南"
 date: "2026-02-18"
 tags: []
-access: private
+access: public
 ---
 
 # Steamcmd 安装指南

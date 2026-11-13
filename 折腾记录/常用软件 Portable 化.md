@@ -4,7 +4,7 @@ title: "常用软件 Portable 化"
 category: "折腾记录"
 date: "2026-09-04"
 tags: []
-access: private
+access: public
 ---
 
 # 常用软件 Portable 化

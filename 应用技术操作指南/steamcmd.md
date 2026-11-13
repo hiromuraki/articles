@@ -4,7 +4,7 @@ title: "steamcmd"
 category: "应用技术操作指南"
 date: "2025-09-06"
 tags: []
-access: private
+access: public
 ---
 
 ## 1.安装

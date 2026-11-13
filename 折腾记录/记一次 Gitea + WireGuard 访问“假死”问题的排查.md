@@ -4,7 +4,7 @@ title: "记一次 Gitea + WireGuard 访问“假死”问题的排查：从 MSS 
 category: "折腾记录"
 date: "2026-02-16"
 tags: []
-access: private
+access: public
 ---
 
 # 记一次 Gitea + WireGuard 访问“假死”问题的排查：从 MSS Clamping 到 MTU 1500

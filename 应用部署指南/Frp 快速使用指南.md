@@ -4,7 +4,7 @@ title: "Frp 快速使用指南"
 category: "应用部署指南"
 date: "2026-02-17"
 tags: []
-access: private
+access: public
 ---
 
 # Frp 快速使用指南

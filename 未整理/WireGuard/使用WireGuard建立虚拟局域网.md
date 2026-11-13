@@ -4,7 +4,7 @@ title: "使用 WireGuard 建立虚拟局域网"
 category: "未整理->WireGuard"
 date: "2026-09-27"
 tags: []
-access: private
+access: public
 ---
 
 # 使用 WireGuard 建立虚拟局域网

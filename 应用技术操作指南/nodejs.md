@@ -4,7 +4,7 @@ title: "nodejs"
 category: "应用技术操作指南"
 date: "2025-05-08"
 tags: []
-access: private
+access: public
 ---
 
 ```bash

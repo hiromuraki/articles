@@ -4,7 +4,7 @@ title: "对 WireGuard VPN 环境下使用 TCP 协议的游戏服务器的网络�
 category: "折腾记录"
 date: "2026-02-17"
 tags: []
-access: private
+access: public
 ---
 
 # 对 WireGuard VPN 环境下使用 TCP 协议的游戏服务器的网络优化指南

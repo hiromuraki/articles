@@ -4,7 +4,7 @@ title: "WireGuard 中的相关概念"
 category: "未整理->WireGuard"
 date: "2026-02-18"
 tags: []
-access: private
+access: public
 ---
 
 # WireGuard 中的相关概念

@@ -4,7 +4,7 @@ title: "nginx"
 category: "未整理"
 date: "2026-02-17"
 tags: []
-access: private
+access: public
 ---
 
 ## 1. 安装
